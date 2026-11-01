@@ -1,0 +1,21 @@
+# Draw for Fight (D4F) — System Architecture Diagrams Index
+
+This directory contains the 13 mandatory architectural, workflow, sequence, and state diagrams for **Draw for Fight (D4F)**, authored in GitHub-flavored Mermaid syntax.
+
+## Diagram Catalog
+
+| # | File | Diagram Type | Subsystem / Scope |
+| :--- | :--- | :--- | :--- |
+| **01** | [01_overall_game_architecture.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/01_overall_game_architecture.md) | `flowchart TD` | Complete 5-tier system architecture, Autoload singletons, UI screens, creation pipeline, Jolt 3D gameplay, and persistence. |
+| **02** | [02_main_gameplay_flow.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/02_main_gameplay_flow.md) | `stateDiagram-v2` | End-to-end state transitions across all 11 screens from boot to rematch. |
+| **03** | [03_character_creation_pipeline.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/03_character_creation_pipeline.md) | `flowchart LR` | 2D Stickman template drawing, RDP simplification, SurfaceTool ribbon extrusion, joint binding, and competitive stat normalization. |
+| **04** | [04_vehicle_creation_pipeline.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/04_vehicle_creation_pipeline.md) | `flowchart LR` | Multi-zone vehicle sketching, wheel circularity analysis, compound chassis extrusion, center-of-mass lowering, and 4-wheel raycast suspension setup. |
+| **05** | [05_2d_to_3d_conversion_pipeline.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/05_2d_to_3d_conversion_pipeline.md) | `flowchart TD` | Algorithmic pipeline for stroke sanitization, mitre-clamped ribbon contouring, ear-clipping triangulation, bevel extrusion, and convex hull decomposition. |
+| **06** | [06_collaborative_map_editing_workflow.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/06_collaborative_map_editing_workflow.md) | `sequenceDiagram` | Real-time multi-user terrain drawing, 3D prop placement, ownership enforcement, countdown lock-in, and A* reachability auto-repair. |
+| **07** | [07_host_and_joining_player_architecture.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/07_host_and_joining_player_architecture.md) | `flowchart TD` | Listen-server (Host-as-Player) internal split vs. remote joining client prediction/interpolation and optional relay routing. |
+| **08** | [08_multiplayer_connection_sequence.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/08_multiplayer_connection_sequence.md) | `sequenceDiagram` | LAN UDP broadcast discovery, optional relay NAT traversal, quarantine state, security handshake trigger, and custom creation upload. |
+| **09** | [09_eight_layer_security_handshake.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/09_eight_layer_security_handshake.md) | `sequenceDiagram` | Full 8-layer cryptographic handshake (Lobby Auth, DTLS, Mutual Identity, 256-bit Challenge-Response, HKDF-SHA256, AES-256-CBC + HMAC EtM, Replay Window, RBAC). |
+| **10** | [10_competition_match_lifecycle.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/10_competition_match_lifecycle.md) | `stateDiagram-v2` | Authoritative match lifecycle covering lobby readiness, 60s map prep, barrier sync, 60 Hz mode evaluation, sudden death overtime, and podium voting. |
+| **11** | [11_game_state_synchronization.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/11_game_state_synchronization.md) | `sequenceDiagram` | 60 Hz client input ring buffer, local physics prediction, 20 Hz server snapshot reconciliation, and 100ms remote entity interpolation. |
+| **12** | [12_disconnect_and_reconnection_workflow.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/12_disconnect_and_reconnection_workflow.md) | `sequenceDiagram` | 45-second slot reservation grace window, exponential backoff reconnection with signed tickets, state catch-up, and host drop recovery. |
+| **13** | [13_windows_build_and_release_workflow.md](file:///C:/Personal%20Project/D4F/draw-for-fight/docs/diagrams/13_windows_build_and_release_workflow.md) | `flowchart LR` | Automated GDScript validation, headless test execution, Windows 10/11 x64 export (`DrawForFight.exe`), loopback smoke test, and itch.io `butler` push. |

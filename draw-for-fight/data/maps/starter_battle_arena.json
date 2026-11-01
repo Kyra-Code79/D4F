@@ -1,0 +1,47 @@
+{
+  "map_id": "map_starter_battle_01",
+  "map_name": "Knockout Sketch Colosseum",
+  "version": 1,
+  "target_mode": 2,
+  "arena_size": [100.0, 40.0, 100.0],
+  "prep_time_limit": 90.0,
+  "is_finalized": false,
+  "allow_client_editing": true,
+  "locked_owners": [],
+  "terrain_strokes": [
+    {
+      "id": "ter_battle_cross_ns",
+      "owner_id": 1,
+      "points": [[0.0, -24.0], [0.0, 24.0]],
+      "width": 16.0,
+      "height": 1.2,
+      "y_offset": 0.0,
+      "color": "#3b4252",
+      "surface_type": "road"
+    },
+    {
+      "id": "ter_battle_cross_ew",
+      "owner_id": 1,
+      "points": [[-24.0, 0.0], [24.0, 0.0]],
+      "width": 16.0,
+      "height": 1.2,
+      "y_offset": 0.0,
+      "color": "#3b4252",
+      "surface_type": "road"
+    }
+  ],
+  "objects": [
+    {"id": "spawn_1", "type": "start_spawn", "owner_id": 1, "position": [-14.0, 1.5, -14.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 0}},
+    {"id": "spawn_2", "type": "start_spawn", "owner_id": 1, "position": [14.0, 1.5, -14.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 1}},
+    {"id": "spawn_3", "type": "start_spawn", "owner_id": 1, "position": [-14.0, 1.5, 14.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 2}},
+    {"id": "spawn_4", "type": "start_spawn", "owner_id": 1, "position": [14.0, 1.5, 14.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 3}},
+    {"id": "spawn_5", "type": "start_spawn", "owner_id": 1, "position": [0.0, 1.5, -18.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 4}},
+    {"id": "spawn_6", "type": "start_spawn", "owner_id": 1, "position": [0.0, 1.5, 18.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 5}},
+    {"id": "spawn_7", "type": "start_spawn", "owner_id": 1, "position": [-18.0, 1.5, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 6}},
+    {"id": "spawn_8", "type": "start_spawn", "owner_id": 1, "position": [18.0, 1.5, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 7}},
+    {"id": "obj_colosseum_floor", "type": "platform", "owner_id": 1, "position": [0.0, -0.6, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [46.0, 1.2, 46.0], "color": "#2e3440", "properties": {"friction": 1.0}},
+    {"id": "obj_center_bumper", "type": "bumper", "owner_id": 1, "position": [0.0, 1.8, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [4.5, 3.0, 4.5], "color": "#ebcb8b", "properties": {"bounce_force": 30.0}},
+    {"id": "obj_boost_north", "type": "boost_pad", "owner_id": 1, "position": [0.0, 0.2, -10.0], "rotation": [0.0, 0.0, 0.0], "scale": [4.0, 0.3, 4.0], "color": "#a3be8c", "properties": {"boost_impulse": 26.0}},
+    {"id": "obj_boost_south", "type": "boost_pad", "owner_id": 1, "position": [0.0, 0.2, 10.0], "rotation": [0.0, 180.0, 0.0], "scale": [4.0, 0.3, 4.0], "color": "#a3be8c", "properties": {"boost_impulse": 26.0}}
+  ]
+}

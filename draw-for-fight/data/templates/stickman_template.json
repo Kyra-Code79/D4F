@@ -1,0 +1,63 @@
+{
+  "template_id": "stickman",
+  "creation_name": "Default Stickman",
+  "creation_type": 0,
+  "canvas_size": [512, 512],
+  "extrusion_depth": 0.35,
+  "guide_anchors": {
+    "head_center": [256.0, 118.0],
+    "neck": [256.0, 154.0],
+    "shoulder_left": [210.0, 182.0],
+    "shoulder_right": [302.0, 182.0],
+    "hip": [256.0, 302.0],
+    "foot_left": [198.0, 444.0],
+    "foot_right": [314.0, 444.0]
+  },
+  "physics_stats": {
+    "mass": 72.0,
+    "speed_mult": 1.05,
+    "accel_mult": 1.1,
+    "jump_mult": 1.05,
+    "grip": 1.0,
+    "bounce": 0.2,
+    "knockback_resist": 1.0
+  },
+  "strokes": [
+    {
+      "points": [[292.0, 118.0], [287.18, 136.0], [274.0, 149.18], [256.0, 154.0], [238.0, 149.18], [224.82, 136.0], [220.0, 118.0], [224.82, 100.0], [238.0, 86.82], [256.0, 82.0], [274.0, 86.82], [287.18, 100.0], [292.0, 118.0]],
+      "color": "#33aaff",
+      "thickness": 10.0,
+      "part_tag": "head"
+    },
+    {
+      "points": [[256.0, 154.0], [256.0, 225.0], [256.0, 302.0]],
+      "color": "#33aaff",
+      "thickness": 12.0,
+      "part_tag": "torso"
+    },
+    {
+      "points": [[256.0, 182.0], [202.0, 216.0], [164.0, 254.0]],
+      "color": "#ffdd44",
+      "thickness": 9.0,
+      "part_tag": "left_arm"
+    },
+    {
+      "points": [[256.0, 182.0], [310.0, 216.0], [348.0, 254.0]],
+      "color": "#ffdd44",
+      "thickness": 9.0,
+      "part_tag": "right_arm"
+    },
+    {
+      "points": [[256.0, 302.0], [220.0, 376.0], [198.0, 444.0]],
+      "color": "#33aaff",
+      "thickness": 10.0,
+      "part_tag": "left_leg"
+    },
+    {
+      "points": [[256.0, 302.0], [292.0, 376.0], [314.0, 444.0]],
+      "color": "#33aaff",
+      "thickness": 10.0,
+      "part_tag": "right_leg"
+    }
+  ]
+}

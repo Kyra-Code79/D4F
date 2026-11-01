@@ -1,0 +1,30 @@
+{
+  "game_title": "Draw for Fight",
+  "version": "1.0.0",
+  "protocol_version": "D4F_NET_V1",
+  "graphics": {
+    "fullscreen": false,
+    "vsync": true,
+    "msaa_3d": 2,
+    "shadow_quality": "high",
+    "camera_fov": 72.0
+  },
+  "audio": {
+    "master_volume": 0.85,
+    "music_volume": 0.70,
+    "sfx_volume": 0.90
+  },
+  "controls": {
+    "mouse_sensitivity": 0.35,
+    "invert_y": false,
+    "brush_smoothing": 0.5
+  },
+  "network": {
+    "default_player_name": "SketchFighter",
+    "default_port": 24800,
+    "lan_broadcast_port": 24801,
+    "max_players": 8,
+    "use_dtls": true,
+    "interpolation_delay_ms": 80
+  }
+}

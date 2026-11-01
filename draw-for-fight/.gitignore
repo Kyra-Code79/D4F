@@ -1,0 +1,34 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Imported textures and translations
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# Exported builds and binaries (keep directory structure via .gitkeep)
+builds/windows_x64/*.exe
+builds/windows_x64/*.pck
+builds/windows_x64/*.dll
+builds/windows_x64/*.zip
+builds/windows_x64/*.pdb
+
+# Temporary and OS files
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Private keys, credentials, and local secrets (NEVER commit secrets)
+*.pem
+*.key
+*.crt
+.env
+.env.*
+secrets.json
+api_keys.cfg

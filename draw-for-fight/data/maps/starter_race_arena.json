@@ -1,0 +1,51 @@
+{
+  "map_id": "map_starter_race_01",
+  "map_name": "Skyline Sketch Circuit",
+  "version": 1,
+  "target_mode": 0,
+  "arena_size": [120.0, 40.0, 120.0],
+  "prep_time_limit": 90.0,
+  "is_finalized": false,
+  "allow_client_editing": true,
+  "locked_owners": [],
+  "terrain_strokes": [
+    {
+      "id": "ter_base_track",
+      "owner_id": 1,
+      "points": [[0.0, 48.0], [0.0, 15.0], [-12.0, -10.0], [0.0, -45.0]],
+      "width": 22.0,
+      "height": 1.2,
+      "y_offset": 0.0,
+      "color": "#3d4b5c",
+      "surface_type": "road"
+    },
+    {
+      "id": "ter_side_bridge",
+      "owner_id": 1,
+      "points": [[14.0, 20.0], [18.0, -5.0], [8.0, -32.0]],
+      "width": 10.0,
+      "height": 1.0,
+      "y_offset": 2.0,
+      "color": "#4f6278",
+      "surface_type": "boost"
+    }
+  ],
+  "objects": [
+    {"id": "spawn_1", "type": "start_spawn", "owner_id": 1, "position": [-9.0, 1.5, 40.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 0}},
+    {"id": "spawn_2", "type": "start_spawn", "owner_id": 1, "position": [-3.0, 1.5, 40.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 1}},
+    {"id": "spawn_3", "type": "start_spawn", "owner_id": 1, "position": [3.0, 1.5, 40.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 2}},
+    {"id": "spawn_4", "type": "start_spawn", "owner_id": 1, "position": [9.0, 1.5, 40.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 3}},
+    {"id": "spawn_5", "type": "start_spawn", "owner_id": 1, "position": [-9.0, 1.5, 45.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 4}},
+    {"id": "spawn_6", "type": "start_spawn", "owner_id": 1, "position": [-3.0, 1.5, 45.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 5}},
+    {"id": "spawn_7", "type": "start_spawn", "owner_id": 1, "position": [3.0, 1.5, 45.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 6}},
+    {"id": "spawn_8", "type": "start_spawn", "owner_id": 1, "position": [9.0, 1.5, 45.0], "rotation": [0.0, 0.0, 0.0], "scale": [2.0, 0.5, 2.0], "color": "#33ff88", "properties": {"spawn_index": 7}},
+    {"id": "obj_main_deck", "type": "platform", "owner_id": 1, "position": [0.0, -0.6, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [44.0, 1.2, 108.0], "color": "#2d3748", "properties": {"friction": 1.0}},
+    {"id": "obj_center_ramp", "type": "ramp", "owner_id": 1, "position": [0.0, 1.2, 16.0], "rotation": [14.0, 0.0, 0.0], "scale": [10.0, 1.5, 8.0], "color": "#f6ad55", "properties": {"boost": 1.25}},
+    {"id": "obj_checkpoint_1", "type": "checkpoint", "owner_id": 1, "position": [0.0, 3.0, 10.0], "rotation": [0.0, 0.0, 0.0], "scale": [16.0, 6.0, 1.5], "color": "#63b3ed", "properties": {"checkpoint_index": 0}},
+    {"id": "obj_checkpoint_2", "type": "checkpoint", "owner_id": 1, "position": [-6.0, 3.0, -18.0], "rotation": [0.0, 0.0, 0.0], "scale": [16.0, 6.0, 1.5], "color": "#63b3ed", "properties": {"checkpoint_index": 1}},
+    {"id": "obj_spinner_1", "type": "spinner", "owner_id": 1, "position": [0.0, 1.6, -4.0], "rotation": [0.0, 0.0, 0.0], "scale": [12.0, 1.2, 1.4], "color": "#fc8181", "properties": {"spin_speed": 2.4, "knockback": 18.0}},
+    {"id": "obj_bumper_left", "type": "bumper", "owner_id": 1, "position": [-8.0, 1.5, 4.0], "rotation": [0.0, 0.0, 0.0], "scale": [3.2, 2.5, 3.2], "color": "#ecc94b", "properties": {"bounce_force": 24.0}},
+    {"id": "obj_bumper_right", "type": "bumper", "owner_id": 1, "position": [8.0, 1.5, -12.0], "rotation": [0.0, 0.0, 0.0], "scale": [3.2, 2.5, 3.2], "color": "#ecc94b", "properties": {"bounce_force": 24.0}},
+    {"id": "obj_finish_line", "type": "finish_line", "owner_id": 1, "position": [0.0, 3.5, -44.0], "rotation": [0.0, 0.0, 0.0], "scale": [20.0, 7.0, 2.0], "color": "#ffd700", "properties": {"goal": true}}
+  ]
+}

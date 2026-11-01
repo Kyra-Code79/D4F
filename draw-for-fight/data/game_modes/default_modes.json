@@ -1,0 +1,58 @@
+{
+  "modes": [
+    {
+      "mode_id": 0,
+      "key": "RACE",
+      "name": "Race Competition",
+      "description": "Sprint or drive your custom 3D sketch creation through checkpoints to cross the finish line first!",
+      "default_prep_time_sec": 90.0,
+      "default_match_time_sec": 180.0,
+      "respawn_enabled": true,
+      "scoring": {
+        "first_place_points": 100,
+        "checkpoint_points": 15,
+        "completion_bonus": 25
+      }
+    },
+    {
+      "mode_id": 1,
+      "key": "OBSTACLE_SURVIVAL",
+      "name": "Obstacle Survival",
+      "description": "Outlast up to 8 competitors on a hazard-packed 3D arena with spinning sweepers and collapsing platforms!",
+      "default_prep_time_sec": 75.0,
+      "default_match_time_sec": 150.0,
+      "respawn_enabled": false,
+      "scoring": {
+        "survival_tick_points": 5,
+        "last_standing_bonus": 80
+      }
+    },
+    {
+      "mode_id": 2,
+      "key": "PHYSICS_BATTLE",
+      "name": "Physics Arena Battle",
+      "description": "Use momentum, boost dashes, and custom creation mass to knock rivals off the 3D colosseum!",
+      "default_prep_time_sec": 90.0,
+      "default_match_time_sec": 180.0,
+      "respawn_enabled": true,
+      "scoring": {
+        "knockout_points": 35,
+        "ring_out_penalty": -10,
+        "victory_bonus": 50
+      }
+    },
+    {
+      "mode_id": 3,
+      "key": "CUSTOM_CHALLENGE",
+      "name": "Custom Collaborative Challenge",
+      "description": "Collaborate with up to 8 players to draw custom 3D terrain roads, ramps, and hazards with custom rules!",
+      "default_prep_time_sec": 120.0,
+      "default_match_time_sec": 240.0,
+      "respawn_enabled": true,
+      "scoring": {
+        "objective_points": 25,
+        "creative_bonus": 20
+      }
+    }
+  ]
+}
